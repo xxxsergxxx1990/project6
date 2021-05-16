@@ -37,7 +37,7 @@
   
   transition-duration:250ms;
   transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property:background-color,color;
+  transition-property:background-color,color,box-shadow;
 
 }
 
@@ -85,7 +85,7 @@
 .block-image-link{
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property:background-color,color;
+  transition-property:opacity, translateY;
 }
 .block-image-link:hover .block-text ,
 .block-image-link:focus .block-text
@@ -95,11 +95,7 @@
   transform: translateY(-100%)
  
 } 
-.block-image-link{
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property:background-color,color;
-}
+
 .block-image-link:focus,
 .block-image-link:hover{
   display: block;

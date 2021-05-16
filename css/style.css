@@ -244,7 +244,7 @@ color: #2196f3;
   background: rgba(255, 255, 255, 0.1);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property:background-color,color;
+  transition-property: background-color;
 }
 .footer-icons-link:hover,
 .footer-icons-link:focus {

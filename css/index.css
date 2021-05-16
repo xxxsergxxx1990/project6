@@ -234,7 +234,7 @@ height: 70px;
   color: #afb1b8;
 }
 .social-icons-link {
-  transition-property: background-color;
+  transition-property: background-color,color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -297,6 +297,7 @@ height: 70px;
 .clients-icons-link {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property:border-color;
 }
 .clients-icons-link:hover,
 .clients-icons-link:focus {
@@ -322,10 +323,7 @@ height: 70px;
   width: 528px;
   padding: 40px;
 }
-.modal-close-btn-link:hover,
-.modal-close-btn-link:focus{
-  color: #2196f3;
-}
+
 .modal-close-btn {
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -362,22 +360,11 @@ height: 70px;
   text-align: center;
   letter-spacing: 0.03em;
 }
-.block-form{
-  display: block;
-  position: relative;
-}
 .text-form {
   padding-bottom: 4px;
 }
-.icon-form{
-  position: absolute;
-  left: 12px;
-  top: 50%;
-
-}
 .contact-modal-form {
   height: 40px;
-  
 }
 .textarea-modal-form {
   height: 120px;
