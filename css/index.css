@@ -289,6 +289,7 @@ height: 70px;
   fill: #afb1b8;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property:fill;
 }
 .clients-icons-svg:not(:last-child) {
   margin-right: 30px;
@@ -321,7 +322,10 @@ height: 70px;
   width: 528px;
   padding: 40px;
 }
-
+.modal-close-btn-link:hover,
+.modal-close-btn-link:focus{
+  color: #2196f3;
+}
 .modal-close-btn {
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
