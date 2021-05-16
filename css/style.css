@@ -1,0 +1,354 @@
+:root {
+  --primary-text-color: #212121;
+  --text-acent-color: #757575;
+  --text-hover-color: #2196f3;
+  --primary-white-color: #ffffff;
+}
+
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
+  font-family: "Roboto","sun-serif";
+}
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  
+}
+.page-header {
+  background: var(--primary-white-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.header-container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.page-nav {
+  display: flex;
+  align-items: center;
+}
+
+.page-nav-logo {
+  color: var(--text-hover-color);
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  display: block;
+  margin-right: 93px;
+}
+.page-nav-stud {
+  color: var(--primary-white-color);
+}
+.page-nav-stud-log {
+  color: var(--primary-text-color);
+}
+
+.nav-link {
+  
+  display: flex;
+  margin-left: auto;
+  flex-wrap: wrap;
+  margin-right: -50px;
+  align-items: center;
+}
+.link-right:first-child {
+  margin-right: 50px;
+}
+.nav-icons-svg {
+
+  fill: currentColor;
+ 
+  margin-right: 10px;
+}
+
+.page-nav-link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+}
+
+
+
+
+.page-nav-link{
+  transition-duration:250ms;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property:color;
+}
+
+.page-nav-link:hover,
+.page-nav-link:focus {
+  color: var(--text-hover-color);
+
+}
+.page-nav-link.current {
+  color: var(--text-hover-color);
+  transition-duration:250ms;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property:color;
+ 
+}
+.page-nav-link-ul .current{
+position: relative;
+color: #2196f3;
+}
+.page-nav-link-ul .current::after{
+  position: absolute;
+  bottom: -31px;
+  display: block;
+  content: '';
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+  background-color: #2196f3;
+}
+.page-nav-link-ul {
+  display: flex;
+  margin-left: auto;
+}
+
+.item-nav:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+
+  flex-wrap: wrap;
+}
+.link-right:not(:last-child) {
+  margin-right: 50px;
+}
+.text-acent-mail{
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property:color;
+}
+.text-acent-mail:focus,
+.text-acent-mail:hover
+{
+color: #2196f3;
+}
+
+.text-acent-mail {
+  display: flex;
+  align-items: center;
+
+}
+
+/*FOOTER*/
+.page-footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.adress {
+  color: var(--primary-white-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin-bottom: auto;
+}
+.adress-mail {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.logo-footer {
+  color: var(--text-hover-color);
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 20px;
+}
+.text-acent {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-acent-color);
+  align-items: center;
+    
+    display: flex;
+
+ 
+}
+
+.footer-icons-link {
+  width: 44px;
+  height: 44px;
+  border: 0px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property:background-color,color;
+}
+.footer-icons-link:hover,
+.footer-icons-link:focus {
+  background: #2196f3;
+  transition-duration:250ms;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-icons-item:not(:last-child) {
+  margin-right: 10px;
+}
+.list-footer {
+  display: flex;
+  align-items: center;
+}
+
+.footer-tittle {
+  color: #ffffff;
+  font-weight: bold;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+}
+.footer-icons-svg {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+.icon-content {
+  margin-left: 70px;
+}
+.telegram-form{
+  margin-left: 93px;
+}
+
+.telegram-tittle{
+  color: #ffffff;
+  font-weight: bold;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+margin-bottom: 20px;
+}
+
+.telegram-svg {
+position:absolute;
+  fill: #ffffff;
+ margin-left: 4px;
+ 
+ 
+ 
+}
+.telegram-button{
+  background-color: #2196f3;
+  color: var(--primary-white-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1, 87;
+  letter-spacing: 0.06em;
+  padding-top: 10px;
+  padding-left: 32px;
+  padding-bottom: 10px;
+  padding-right: 32px;
+  margin-left: 12px;
+  margin-right: auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+ position: relative;
+  width: 200px;
+  height: 50px;
+  
+}
+.telegram-text{
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+box-sizing: border-box;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+font-size: 16px;
+line-height: 1.25;
+color: rgba(255, 255, 255, 0.6);
+width: 358px;
+height: 50px;
+}
+
+.block-form{
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 10px;
+}
+
+.text-form{
+
+font-size: 12px;
+line-height: 1.16;
+letter-spacing: 0.01em;
+color: #757575;
+padding: 0;
+margin: 0;
+}
+.contact-modal-form{
+  border: 1px solid rgba(33, 33, 33, 0.2);
+box-sizing: border-box;
+border-radius: 4px;
+width: 100%;
+
+
+}
