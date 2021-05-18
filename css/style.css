@@ -5,7 +5,6 @@
   --primary-white-color: #ffffff;
 }
 
-
 html {
   box-sizing: border-box;
 }
@@ -17,7 +16,7 @@ html {
 body {
   color: var(--primary-text-color);
   background-color: var(--primary-white-color);
-  font-family: "Roboto","sun-serif";
+  font-family: "Roboto", "sun-serif";
 }
 .visually-hidden {
   position: absolute !important;
@@ -43,7 +42,6 @@ ul {
 a {
   text-decoration: none;
   cursor: pointer;
-  
 }
 .page-header {
   background: var(--primary-white-color);
@@ -90,7 +88,6 @@ a {
 }
 
 .nav-link {
-  
   display: flex;
   margin-left: auto;
   flex-wrap: wrap;
@@ -101,9 +98,8 @@ a {
   margin-right: 50px;
 }
 .nav-icons-svg {
-
   fill: currentColor;
- 
+
   margin-right: 10px;
 }
 
@@ -113,39 +109,33 @@ a {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
 }
 
-
-
-
-.page-nav-link{
-  transition-duration:250ms;
-  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property:color;
+.page-nav-link {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
 }
 
 .page-nav-link:hover,
 .page-nav-link:focus {
   color: var(--text-hover-color);
-
 }
 .page-nav-link.current {
   color: var(--text-hover-color);
-  transition-duration:250ms;
-  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property:color;
- 
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
 }
-.page-nav-link-ul .current{
-position: relative;
-color: #2196f3;
+.page-nav-link-ul .current {
+  position: relative;
+  color: #2196f3;
 }
-.page-nav-link-ul .current::after{
+.page-nav-link-ul .current::after {
   position: absolute;
   bottom: -31px;
   display: block;
-  content: '';
+  content: "";
   height: 4px;
   width: 100%;
   border-radius: 2px;
@@ -169,21 +159,19 @@ color: #2196f3;
 .link-right:not(:last-child) {
   margin-right: 50px;
 }
-.text-acent-mail{
+.text-acent-mail {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property:color;
+  transition-property: color;
 }
 .text-acent-mail:focus,
-.text-acent-mail:hover
-{
-color: #2196f3;
+.text-acent-mail:hover {
+  color: #2196f3;
 }
 
 .text-acent-mail {
   display: flex;
   align-items: center;
-
 }
 
 /*FOOTER*/
@@ -227,10 +215,8 @@ color: #2196f3;
   letter-spacing: 0.03em;
   color: var(--text-acent-color);
   align-items: center;
-    
-    display: flex;
 
- 
+  display: flex;
 }
 
 .footer-icons-link {
@@ -249,8 +235,8 @@ color: #2196f3;
 .footer-icons-link:hover,
 .footer-icons-link:focus {
   background: #2196f3;
-  transition-duration:250ms;
-  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icons-item:not(:last-child) {
   margin-right: 10px;
@@ -263,9 +249,9 @@ color: #2196f3;
 .footer-tittle {
   color: #ffffff;
   font-weight: bold;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
 }
 .footer-icons-svg {
   width: 20px;
@@ -275,28 +261,25 @@ letter-spacing: 0.03em;
 .icon-content {
   margin-left: 70px;
 }
-.telegram-form{
+.telegram-form {
   margin-left: 93px;
 }
 
-.telegram-tittle{
+.telegram-tittle {
   color: #ffffff;
   font-weight: bold;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
 }
 
 .telegram-svg {
-position:absolute;
+  position: absolute;
   fill: #ffffff;
- margin-left: 4px;
- 
- 
- 
+  margin-left: 4px;
 }
-.telegram-button{
+.telegram-button {
   background-color: #2196f3;
   color: var(--primary-white-color);
   font-weight: bold;
@@ -311,44 +294,39 @@ position:absolute;
   margin-right: auto;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
- position: relative;
+  position: relative;
   width: 200px;
   height: 50px;
-  
 }
-.telegram-text{
+.telegram-text {
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
-box-sizing: border-box;
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-border-radius: 4px;
-font-size: 16px;
-line-height: 1.25;
-color: rgba(255, 255, 255, 0.6);
-width: 358px;
-height: 50px;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+  width: 358px;
+  height: 50px;
 }
 
-.block-form{
-  margin-left: 40px;
-  margin-right: 40px;
+.block-form {
+ 
   margin-bottom: 10px;
 }
 
-.text-form{
-
-font-size: 12px;
-line-height: 1.16;
-letter-spacing: 0.01em;
-color: #757575;
-padding: 0;
-margin: 0;
+.text-form {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: #757575;
+  padding: 0;
+  margin: 0;
 }
-.contact-modal-form{
+.contact-modal-form {
   border: 1px solid rgba(33, 33, 33, 0.2);
-box-sizing: border-box;
-border-radius: 4px;
-width: 100%;
-
-
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 100%;
 }

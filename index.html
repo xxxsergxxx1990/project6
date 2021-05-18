@@ -149,19 +149,19 @@
             <li class="list-image">
               <img src="images/img.png" width="370" alt="photo" />
               <div class="image-tittle-box">
-              <p class="image-tittle">Десктопные приложения</p>
+                <p class="image-tittle">Десктопные приложения</p>
               </div>
             </li>
             <li class="list-image">
               <img src="images/box2.png" width="370" alt="photo" />
               <div class="image-tittle-box">
-              <p class="image-tittle">Мобильные приложения</p>
+                <p class="image-tittle">Мобильные приложения</p>
               </div>
             </li>
             <li class="list-image">
               <img src="images/box3.png" width="370" alt="photo" />
               <div class="image-tittle-box">
-              <p class="image-tittle">Дизайнерские решения</p>
+                <p class="image-tittle">Дизайнерские решения</p>
               </div>
             </li>
           </ul>
@@ -464,8 +464,6 @@
           </ul>
         </div>
 
-
-        
         <form class="telegram-form">
           <p class="telegram-tittle">Подпишитесь на рассылку</p>
           <input
@@ -485,59 +483,68 @@
         </form>
       </div>
     </footer>
- 
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-
         <button class="modal-close-btn" data-modal-close>
+<a href="" class="close-btn-hov">
           <svg width="11" height="11">
-            <use  href="./images/icon/sprite.svg#icon-close"></use>
+            <use href="./images/icon/sprite.svg#icon-close"></use>
           </svg>
+</a>
         </button>
         <h2 class="modal-tittle">Оставьте свои данные, мы вам перезвоним</h2>
         <form class="modal-form">
-<div class="block-form">
-          <p class="text-form">Имя</p>
-          <svg class="icon-form " width="12" height="12">
-            <use
-              href="./images/icon/sprite.svg#icon-Vector-form-1"
-            ></use>
-          </svg>
-          <input name="user-name" type="text" class="contact-modal-form" />
-     </div>  
-     <div class="block-form"> 
-          <p class="text-form">Телефон</p>
-          <svg class="icon-form " width="13" height="13">
-            <use
-              href="./images/icon/sprite.svg#icon-vector-form-2"
-            ></use>
-          </svg>
-          <input name="user-tel" type="tel" class="contact-modal-form" />
-        </div> 
-        <div class="block-form">
-          <p class="text-form">Почта</p>
-          <svg class="icon-form " width="15" height="12">
-            <use
-              href="./images/icon/sprite.svg#icon-Vector-form"
-            ></use>
-          </svg>
-          <input name="user-email" type="text" class="contact-modal-form" />
-         </div>  
-         <div class="block-form">
-           <p class="text-form">Комментарий</p>
-          <textarea class="textarea-modal-form"
-            name=" user-text"
-            
-            placeholder="Введите текст"
-          ></textarea>
-          </div>
-          <input type="checkbox" name="user-checkbox"  id="checkbox" class="visually-hidden">
-          <label class="checkbox-label" for="checkbox">
-          Соглашаюсь с рассылкой и принимаю <a href="" class="checkbox-link"> Условия договора</a>  
-        </label>
-        <button class="button-form">Отправить</button>
-        </form>
+          <div class="block-form">
 
+            <p class="text-form">Имя</p>
+            <div class="block-form-hov">
+            <svg class="icon-form" width="12" height="12">
+              <use href="./images/icon/sprite.svg#icon-Vector-form-1"></use>
+            </svg>
+            <input name="user-name" type="text" class="contact-modal-form" />
+            </div>
+          </div>
+          <div class="block-form">
+            <p class="text-form">Телефон</p>
+            <div class="block-form-hov">
+            <svg class="icon-form" width="13" height="13">
+              <use href="./images/icon/sprite.svg#icon-vector-form-2"></use>
+            </svg>
+            <input name="user-tel" type="tel" class="contact-modal-form" />
+            </div>
+          </div>
+          <div class="block-form">
+            <p class="text-form">Почта</p>
+            <div class="block-form-hov">
+            <svg class="icon-form" width="15" height="12">
+              <use href="./images/icon/sprite.svg#icon-Vector-form"></use>
+            </svg>
+            <input name="user-email" type="text" class="contact-modal-form" />
+            </div>
+          </div>
+          <div class="block-form">
+            <p class="text-form">Комментарий</p>
+            
+            <textarea
+              class="textarea-modal-form"
+              name=" user-text"
+              placeholder="Введите текст"
+            ></textarea>
+            
+          </div>
+          <input
+            type="checkbox"
+            name="user-checkbox"
+            id="checkbox"
+            class="visually-hidden checlbox"
+          />
+          <label class="checkbox-label" for="checkbox">
+            Соглашаюсь с рассылкой и принимаю
+            <a href="" class="checkbox-link">   Условия договора</a>
+          </label>
+          <button class="button-form">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
