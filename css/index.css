@@ -330,8 +330,8 @@ img {
   width: 30px;
   height: 30px;
 }
-.close-btn-hov:hover,
-.close-btn-hov:focus{
+.modal-close-btn:hover,
+.modal-close-btn:focus{
   fill:  #2196f3;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -374,10 +374,20 @@ img {
 .text-form {
   padding-bottom: 4px;
 }
+
 .contact-modal-form {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 100%;
+  padding-left: 42px;
   height: 40px; 
 }
-.contact-modal-form:focus,
+
+.contact-modal-form:focus{
+  border-color: #2196f3;
+  
+}
 .contact-modal-form:hover{
   border-color: #2196f3;
 }
@@ -414,6 +424,9 @@ img {
   height: 15px;
   border: 1px solid #212121;
   border-radius: 2px;
+}
+.checkbox-label::before:focus{
+  color: #2196f3;
 }
 .checlbox:checked + .checkbox-label::before{
   background-image: url(../images/icon/Vector\ \(4\).svg);
