@@ -425,7 +425,7 @@ img {
   border: 1px solid #212121;
   border-radius: 2px;
 }
-.checkbox-label::before:focus{
+.checlbox-label::before:focus{
   color: #2196f3;
 }
 .checlbox:checked + .checkbox-label::before{
