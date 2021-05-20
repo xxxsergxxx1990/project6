@@ -405,11 +405,9 @@ img {
   border-radius: 4px;
   resize: none;
 }
-.checkbox:focus{
-  color: #2196f3;
-}
+
 .checkbox:focus + .checkbox-label::before:focus{
-  color: #2196f3;
+  fill: #2196f3;
 }
 .checkbox-label {
   font-size: 14px;
