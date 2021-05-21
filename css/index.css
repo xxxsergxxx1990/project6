@@ -425,6 +425,7 @@ img {
   height: 15px;
   border: 1px solid #212121;
   border-radius: 2px;
+  margin-right: 7px;
 }
 .checkbox:focus + .checkbox-label::before:focus{
   border-color: #2196f3;
