@@ -403,7 +403,7 @@ img {
 .textarea-modal-form {
   height: 120px;
   width: 100%;
-outline: none;
+  outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
@@ -432,10 +432,11 @@ outline: none;
   border: 1px solid #212121;
   border-radius: 2px;
   margin-right: 7px;
+  cursor: pointer;
 }
 
-.checkbox:focus + .checkbox-label::before:focus {
-  border:#2196f3}
+.checkbox-label:focus + .checkbox-label::before {
+  border-color: #2196f3;}
 
 
 
