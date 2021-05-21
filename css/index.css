@@ -382,31 +382,37 @@ img {
   width: 100%;
   padding-left: 42px;
   height: 40px; 
+  outline: none;
+}
+.contact-modal-form:hover,
+.contact-modal-form:focus{
+  border-color: #2196f3;
 }
 
-.contact-modal-form:focus,
-.contact-modal-form:hover 
-{
-  border-color: #2196f3;
-}  
-.contact-modal-form:focus
-.contact-modal-form:hover + .icon-form:focus,.icon-form:hover{
- 
+.input-hov:hover,
+.input-hov:focus{
   fill: #2196f3;
-}
+  
+} 
+
+
+
 
 
 
 .textarea-modal-form {
   height: 120px;
   width: 100%;
-
+outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
   resize: none;
 }
-
+.textarea-modal-form:hover,
+.textarea-modal-form:focus{
+  border-color: #2196f3;
+}
 
 .checkbox-label {
   font-size: 14px;
@@ -427,9 +433,12 @@ img {
   border-radius: 2px;
   margin-right: 7px;
 }
-.checkbox:focus + .checkbox-label::before:focus{
-  border-color: #2196f3;
-}
+
+.checkbox:focus + .checkbox-label::before:focus {
+  border:#2196f3}
+
+
+
 .checkbox:checked + .checkbox-label::before{
   background-image: url(../images/icon/Vector\ \(4\).svg);
   background-repeat: no-repeat;
