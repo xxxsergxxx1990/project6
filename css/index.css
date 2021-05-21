@@ -389,7 +389,8 @@ img {
 {
   border-color: #2196f3;
 }  
-.contact-modal-form:focus + .icon-form:focus{
+.contact-modal-form:focus
+.contact-modal-form:hover + .icon-form:focus,.icon-form:hover{
  
   fill: #2196f3;
 }
@@ -406,9 +407,7 @@ img {
   resize: none;
 }
 
-.checkbox:focus + .checkbox-label::before:focus{
-  fill: #2196f3;
-}
+
 .checkbox-label {
   font-size: 14px;
   line-height: 1.71;
@@ -427,7 +426,9 @@ img {
   border: 1px solid #212121;
   border-radius: 2px;
 }
-
+.checkbox:focus + .checkbox-label::before:focus{
+  border-color: #2196f3;
+}
 .checkbox:checked + .checkbox-label::before{
   background-image: url(../images/icon/Vector\ \(4\).svg);
   background-repeat: no-repeat;
